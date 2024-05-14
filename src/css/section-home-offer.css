@@ -1,0 +1,18 @@
+.hero-cta-wrap {
+  display: none;
+}
+
+/*** Tablet ***/
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+}
+/*** Desktop ***/
+@media screen and (min-width: 1280px) {
+  .hero-cta-wrap {
+    display: flex;
+    gap: 16px;
+  }
+}

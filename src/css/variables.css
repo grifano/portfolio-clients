@@ -1,0 +1,27 @@
+:root {
+  --font-family: 'Poppins', sans-serif;
+
+  /*** Primitives ***/
+  --black: #000;
+  --white: #fff;
+  --light-grey: #b0b0b8;
+  --red: #e46e7d;
+  --green: #00c48d;
+  --blue: #6ea1ff;
+  --orange: #fa8a5b;
+  --dark-grey: #5b5b63;
+
+  /*** Tokens ***/
+  --focus: var(--blue);
+  --success: var(--green);
+  --warning: var(--red);
+
+  /*** Transition ***/
+  --transition-goit: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}

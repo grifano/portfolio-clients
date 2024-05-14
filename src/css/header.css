@@ -1,21 +1,210 @@
 .header {
-  padding: 20px 0;
+  padding-top: 16px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
-
-.nav-list {
+.header-wrap {
+  padding: 16px 24px;
+  background-color: #727597;
+  border-radius: 8px;
   display: flex;
+  gap: 16px;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  position: relative;
+  z-index: 999;
 }
-
-.nav-link {
+.header-logo {
+  width: 92px;
+  height: 24px;
+  transition: opacity var(--transition-goit);
+  margin-right: auto;
+}
+.header-menu {
+  color: #fff;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  font-size: 20px;
   line-height: 1.5;
+  text-align: center;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  border-radius: 8px;
+  background-color: #727597;
+  transition: all var(--transition-goit);
+  position: absolute;
+  width: 100%;
+  top: 91px;
+  left: 0;
+  z-index: 998;
+  transform: translateY(100%);
+  visibility: hidden;
+  opacity: 0;
+  &.is-open {
+    /* Hidden when not active  */
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.header-nav {
+  margin-bottom: 80px;
+}
+.header-nav-list {
+}
+.header-nav-item {
+}
+.header-nav-link {
+  display: block;
+  padding: 8px;
+}
+.header-address {
+  margin-top: auto;
+  font-weight: 300;
+  font-size: 12px;
+  max-width: 151px;
+  margin-bottom: 32px;
+}
+.social-list {
+  display: flex;
+  gap: 12px;
+}
+.social-list-item {
+}
+.social-link {
+  padding: 12px;
+}
+.social-link {
+  padding: 12px;
+}
+.social-icon {
+  fill: #fff;
+}
+.header-burger-button {
+  width: 32px;
+  height: 24px;
+  position: relative;
+}
+.burger-line {
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--ui-color);
+  transition: all var(--transition-goit);
+  position: absolute;
+  transform-origin: center;
+  left: 0;
+  &.is-top {
+    top: 0;
+  }
+  &.is-mid {
+    top: 50%;
+    margin-top: -2px;
+  }
+  &.is-bottom {
+    bottom: 0;
+  }
+}
+.header-burger-button.is-active {
+  .burger-line {
+    &.is-top {
+      top: 0;
+      transform: rotate(45deg) translateY(6px) translateX(7px);
+    }
+    &.is-mid {
+      top: 50%;
+      margin-top: -2px;
+      transform: scale(0);
+    }
+    &.is-bottom {
+      bottom: 0;
+      transform: rotate(-45deg) translateY(-7px) translateX(8px);
+    }
+  }
+}
+.button-main.is-header-action {
+  display: none;
+}
+
+/*** Tablet ***/
+@media screen and (min-width: 768px) {
+  .button-main.is-header-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    gap: 12px;
+    .header-button-icon {
+      fill: #fff;
+    }
+  }
+}
+/*** Desktop ***/
+@media screen and (min-width: 1280px) {
+  .header-logo:focus,
+  .header-logo:hover {
+    opacity: 0.7;
+  }
+  .header-burger-button {
+    display: none;
+  }
+  .header-menu {
+    font-size: 16px;
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+    transition: none;
+    display: block;
+    position: static;
+    width: auto;
+    /* top: 91px;
+    left: 0;
+    z-index: 998; */
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+    margin-left: auto;
+    &.is-open {
+      /* Hidden when not active  */
+      transform: translateY(0);
+      visibility: visible;
+      opacity: 1;
+    }
+    .header-nav {
+      margin: 0;
+    }
+    .header-nav-list {
+      display: flex;
+    }
+    .header-address {
+      display: none;
+    }
+    .social-list {
+      display: none;
+    }
+    .header-nav-item {
+      position: relative;
+      text-align: center;
+    }
+    .header-nav-item:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      transform: scale(0);
+      height: 2px;
+      border-radius: 2px;
+      background-color: var(--ui-color);
+      transition: transform var(--transition-goit);
+    }
+    .header-nav-item:hover::after,
+    .header-nav-item:focus::after {
+      transform: scale(1);
+    }
+  }
 }

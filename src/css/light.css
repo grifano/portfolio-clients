@@ -1,0 +1,7 @@
+:root {
+  --text-color: #504e4f;
+  --ui-color: var(--orange);
+  --brand-color: var(--orange);
+  --brand-secondary-color: #727597;
+  --body-bg-color: #f3f4f6;
+}
