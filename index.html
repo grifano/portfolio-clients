@@ -1,84 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/portfolio-clients/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    
-    <script type="module" crossorigin src="/portfolio-clients/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/portfolio-clients/assets/index-10c40100.css">
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <meta
+    name="theme-color"
+    media="(prefers-color-scheme: light)"
+    content="#1F2E35"
+  />
+  <meta
+    name="theme-color"
+    media="(prefers-color-scheme: dark)"
+    content="#fff"
+  />
+  <title>Grifano | Webflow Expert</title>
+  <link rel="icon" type="image/svg+xml" href="/portfolio-clients/favicon.svg" />
+  <link
+    rel="stylesheet"
+    href="data:text/css;base64,OnJvb3QgewogIC0tdGV4dC1jb2xvcjogIzUwNGU0ZjsKICAtLXVpLWNvbG9yOiB2YXIoLS1vcmFuZ2UpOwogIC0tYnJhbmQtY29sb3I6IHZhcigtLW9yYW5nZSk7CiAgLS1icmFuZC1zZWNvbmRhcnktY29sb3I6ICM3Mjc1OTc7CiAgLS1ib2R5LWJnLWNvbG9yOiAjZjNmNGY2Owp9Cg=="
+    media="(prefers-color-scheme: light)"
+  />
+  <link
+    rel="stylesheet"
+    href="data:text/css;base64,OnJvb3QgewogIC0tdGV4dC1jb2xvcjogdmFyKC0td2hpdGUpOwogIC0tdWktY29sb3I6IHZhcigtLW9yYW5nZSk7CiAgLS1icmFuZC1jb2xvcjogdmFyKC0tb3JhbmdlKTsKICAtLWJyYW5kLXNlY29uZGFyeS1jb2xvcjogIzcyNzU5NzsKICAtLWJvZHktYmctY29sb3I6ICMyNzFmMWI7Cn0K"
+    media="(prefers-color-scheme: dark)"
+  />
+  
+  <script type="module" crossorigin src="/portfolio-clients/assets/main-ae8da256.js"></script>
+  <link rel="stylesheet" href="/portfolio-clients/assets/main-3c68cb2a.css">
+  <link rel="stylesheet" href="/portfolio-clients/assets/vendor-a6b3472e.css">
+</head>
+
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container">
+    <div class="header-wrap">
+      <a href="/" class="header-logo">
+        <img src="../img/logo.svg" width="94" height="24" alt="grifano logo" />
+      </a>
+      <div class="header-menu">
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="./about-me.html" class="header-nav-link">My Story</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./about-me.html" class="header-nav-link">Portfoio</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./about-me.html" class="header-nav-link">Services</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./about-me.html" class="header-nav-link">Testimonials</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          ul. Morska 32/1 <br />
+          75-212, Koszalin <br />
+          Poland <br />
+          VAT: PL5223091108
+        </address>
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a
+              href=""
+              class="social-link"
+              rel="aria-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="24" height="24" class="social-icon">
+                <use href="/portfolio-clients/assets/icons-5f91afab.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a
+              href=""
+              class="social-link"
+              rel="aria-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="24" height="24" class="social-icon">
+                <use href="/portfolio-clients/assets/icons-5f91afab.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a
+              href=""
+              class="social-link"
+              rel="aria-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="24" height="24" class="social-icon">
+                <use href="/portfolio-clients/assets/icons-5f91afab.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="button-main is-header-action">
+        <svg width="24" height="24" class="header-button-icon">
+          <use href="/portfolio-clients/assets/icons-5f91afab.svg#icon-calendar"></use>
+        </svg>
+        Let’s talk
+      </button>
+      <div class="header-burger-button">
+        <span class="burger-line is-top"></span>
+        <span class="burger-line is-mid"></span>
+        <span class="burger-line is-bottom"></span>
+      </div>
+    </div>
+  </div>
 </header>
 
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/portfolio-clients/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+    <main>
+      <section class="section-hero">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/portfolio-clients/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    <div class="hero-wrap">
+      <div class="hero-wrap-col">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Hi 👋 I’m Serhii I <span>help</span> small businesses
+            <span>win</span> more <span>customers</span>, using web technology
+          </h1>
+          <p class="hero-subtext">
+            I specialize in strategic web design, crafting people-centric
+            digital experiences, and creating standout websites that win
+            customers.
+          </p>
+        </div>
+      </div>
+      <div class="hero-wrap-col">
+        <picture class="home-hero-picture">
+          <!-- Mobile -->
+          <source
+            type="image/webp"
+            srcset="data:image/webp;base64,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 , /portfolio-clients/assets/home-hero-bg_mobile@2x-16998c93.webp 2x"
+            media="(min-width: 320px) and (max-width: 768px)"
+            width="327"
+            height="207"
+          />
+          <source
+            type="image/jpg"
+            srcset="/portfolio-clients/assets/home-hero-bg_mobile-46181400.jpg , /portfolio-clients/assets/home-hero-bg_mobile@2x-a76391ed.jpg 2x"
+            media="(min-width: 320px) and (max-width: 768px)"
+            width="327"
+            height="207"
+          />
+          <!-- Tablet -->
+          <source
+            type="image/webp"
+            srcset="/portfolio-clients/assets/home-hero-bg_tablet-10485b41.webp , /portfolio-clients/assets/home-hero-bg_tablet@2x-726ad843.webp 2x"
+            media="(min-width: 768px) and (max-width: 1280px)"
+            width="696"
+            height="464"
+          />
+          <source
+            type="image/jpg"
+            srcset="/portfolio-clients/assets/home-hero-bg_tablet-85865647.jpg , /portfolio-clients/assets/home-hero-bg_tablet@2x-83f0d38e.jpg 2x"
+            media="(min-width: 768px) and (max-width: 1280px)"
+            width="696"
+            height="464"
+          />
+          <!-- Desktop -->
+          <source
+            type="image/webp"
+            srcset="/portfolio-clients/assets/home-hero-bg_desktop-161e84b4.webp , /portfolio-clients/assets/home-hero-bg_desktop@2x-1faa7a6d.webp 2x"
+            media="(min-width: 1280px)"
+            width="540"
+            height="540"
+          />
+          <source
+            type="image/jpg"
+            srcset="/portfolio-clients/assets/home-hero-bg_desktop-f46a508b.jpg , /portfolio-clients/assets/home-hero-bg_desktop@2x-6c7ade83.jpg 2x"
+            media="(min-width: 1280px)"
+            width="540"
+            height="540"
+          />
+          <!-- Default image for older browsers; this will be used if none of the above sources are compatible -->
+          <img
+            src="./images/top-image-desktop.webp"
+            alt="Men in glasses and yellow t-shirt looking straight"
+            width="327"
+            height="207"
+            class="home-hero-image"
+          />
+        </picture>
+      </div>
     </div>
   </div>
 </section>
 
+    </main>
 
     
   </body>
